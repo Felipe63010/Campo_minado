@@ -48,13 +48,13 @@ def marcar_bomba(mapa):
         marcar_linha = marcar_linha - 1
         marcar_coluna = marcar_coluna - 1
         
-    '''Verifica se está dentro dos limites'''
+        '''Verifica se está dentro dos limites'''
         if marcar_linha >= linhas or marcar_coluna >= colunas or marcar_linha < 0 or marcar_coluna < 0:
             print("Posição escolhida inválida!")
         else:
             mapa[marcar_linha][marcar_coluna] = "M"
 
-    '''Mostra o mapa atualizado'''
+        '''Mostra o mapa atualizado'''
         for linha in mapa:
             print(*linha, sep=" ")
     except(ValueError):
